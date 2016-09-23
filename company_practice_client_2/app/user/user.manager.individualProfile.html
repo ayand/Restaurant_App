@@ -1,0 +1,51 @@
+<button ng-click="goBack()" class="btn btn-primary" style="font-size: 14px">Back to Profiles</button>
+<br>
+<br>
+<div class="jumbotron">
+  <div class="row">
+    <div class="col-sm-6">
+      <p>Name:</p>
+    </div>
+    <div class="col-sm-6">
+      <p>{{profile.firstName + " " + profile.lastName}}</p>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-sm-6">
+      <p>Email:</p>
+    </div>
+    <div class="col-sm-6">
+      <p>{{profile.Email}}</p>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-sm-6">
+      <p>Mobile:</p>
+    </div>
+    <div class="col-sm-6">
+      <p>{{profile.Mobile}}</p>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-sm-6">
+      <p>Address:</p>
+    </div>
+    <div class="col-sm-6">
+      <div class="row">
+        <div class="col-sm-12">
+          <p>{{profile.address.street_address}}</p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-sm-12">
+          <p>{{profile.address.city + ", " + profile.address.state + " " + profile.address.pincode}}</p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-sm-12">
+          <p>{{profile.address.country}}</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

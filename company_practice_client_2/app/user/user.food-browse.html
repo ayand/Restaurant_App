@@ -1,0 +1,17 @@
+<header class ="page-header" >
+  <div class="row">
+    <ul class="nav nav-pills pull-right">
+      <li><label class="btn btn-warning" ng-click="seeOrder()">See Order</label></li>
+    </ul>
+  </div>
+</header>
+<div>
+  <div align="center">
+    <h1>Make an Order</h1>
+    <br>
+    <div class="btn-group">
+      <label ng-repeat= "category in categories" class="btn btn-danger" ng-click="pickCategory(category)">{{ category }}</label>
+    </div>
+  </div>
+</div>
+<div ui-view></div>

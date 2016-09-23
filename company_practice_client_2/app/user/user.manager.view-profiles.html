@@ -1,0 +1,39 @@
+<div align="center">
+  <!--<table>
+    <tr ng-repeat="profile in profiles">
+      <td align="center">{{profile.firstName + " " + profile.lastName}}</td>
+      <td align="center">Date created: {{profile.created}}</td>
+      <td align="center">View Profile</td>
+    </tr>
+  </table>-->
+  <!--<div class="jumbotron" ng-repeat="profile in profiles" style="background-color: #00CCFF">
+    <div class="row">
+      <div align="center" class="col-sm-4">
+        <p style="font-size: 14px">{{profile.firstName + " " + profile.lastName}}</p>
+      </div>
+      <div align="center" class="col-sm-4">
+        <p style="font-size: 14px">Date created: {{profile.created}}</p>
+      </div>
+      <div align="center" class="col-sm-4">
+        <button type="submit" ng-click="goToProfile(profile._id)" class="btn btn-primary" style="font-size: 14px">View Profile</button>
+      </div>
+    </div>
+  </div>-->
+  <table class="table table-striped">
+    <thead>
+      <th class="text-center">Name</th>
+      <th class="text-center">Email</th>
+      <th class="text-center">Date Created</th>
+      <th class="text-center">View Profile</th>
+    </thead>
+    <tbody>
+      <tr ng-repeat="profile in profiles">
+        <td align="center">{{profile.firstName + " " + profile.lastName}}</td>
+        <td align="center">{{profile.Email}}</td>
+        <td align="center">Date created: {{profile.created}}</td>
+        <td align="center"><button type="submit" ng-click="goToProfile(profile._id)" class="btn btn-primary" style="font-size: 14px">View Profile</button></td>
+      </tr>
+    </tbody>
+  </table>
+
+</div>

@@ -1,0 +1,15 @@
+<style>
+  .jumbotron {
+    background-color: #FF6666;
+    padding: 0.5em 0.6em;
+  }
+</style>
+<div align="center">
+  <div class="jumbotron">
+    <h2>{{ dishName }}</h2>
+    <img class="center-block" ng-src="{{'http://localhost:3000' + picURL }}" height="250" alt="villainImage"/>
+    <p>{{'Price: $' + price }}</p>
+    <label class="btn btn-warning" ng-click="addToOrder()">Add to Order</label>
+  </div>
+
+</div>

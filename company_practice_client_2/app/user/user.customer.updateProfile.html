@@ -1,0 +1,73 @@
+<div class="jumbotron">
+  <div class="row">
+    <div class="col-sm-6">
+      <p>First Name:</p>
+    </div>
+    <div class="col-sm-6">
+      <input type="text" ng-model="$parent.profile.firstName" class="form-control" placeholder="First Name">
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-sm-6">
+      <p>Last Name:</p>
+    </div>
+    <div class="col-sm-6">
+      <input type="text" ng-model="$parent.profile.lastName" class="form-control" placeholder="Last Name">
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-sm-6">
+      <p>Mobile:</p>
+    </div>
+    <div class="col-sm-6">
+      <input type="text" ng-model="$parent.profile.Mobile" class="form-control" placeholder="Mobile Number">
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-sm-6">
+      <p>Street Address:</p>
+    </div>
+    <div class="col-sm-6">
+      <input type="text" ng-model="$parent.profile.address.street_address" class="form-control" placeholder="Street Address">
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-sm-6">
+      <p>City:</p>
+    </div>
+    <div class="col-sm-6">
+      <input type="text" ng-model="$parent.profile.address.city" class="form-control" placeholder="City">
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-sm-6">
+      <p>Pincode:</p>
+    </div>
+    <div class="col-sm-6">
+      <input type="text" ng-model="$parent.profile.address.pincode" class="form-control" placeholder="Pincode">
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-sm-6">
+      <p>State:</p>
+    </div>
+    <div class="col-sm-6">
+      <input type="text" ng-model="$parent.profile.address.state" class="form-control" placeholder="State">
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-sm-6">
+      <p>Country:</p>
+    </div>
+    <div class="col-sm-6">
+      <input type="text" ng-model="$parent.profile.address.country" class="form-control" placeholder="Country">
+    </div>
+  </div>
+  <div align="center">
+    <div class="btn-group">
+      <label class="btn btn-success" ng-click="updateProfile()">Update Profile</label>
+      <label class="btn btn-danger" ng-click="cancel()">Cancel</label>
+    </div>
+  </div>
+
+</div>

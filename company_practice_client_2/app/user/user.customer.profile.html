@@ -1,0 +1,75 @@
+<div class="jumbotron">
+  <!--<div class="row">
+    <div class="col-sm-6">
+      <p>Name:</p>
+    </div>
+    <div class="col-sm-6">
+      <p>{{$parent.profile.firstName + " " + $parent.profile.lastName}}</p>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-sm-6">
+      <p>Email:</p>
+    </div>
+    <div class="col-sm-6">
+      <p>{{$parent.profile.Email}}</p>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-sm-6">
+      <p>Mobile:</p>
+    </div>
+    <div class="col-sm-6">
+      <p>{{$parent.profile.Mobile}}</p>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-sm-6">
+      <p>Address:</p>
+    </div>
+    <div class="col-sm-6">
+      <div class="row">
+        <div class="col-sm-12">
+          <p>{{$parent.profile.address.street_address}}</p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-sm-12">
+          <p>{{$parent.profile.address.city + ", " + $parent.profile.address.state + " " + $parent.profile.address.pincode}}</p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-sm-12">
+          <p>{{$parent.profile.address.country}}</p>
+        </div>
+      </div>
+    </div>
+  </div>-->
+  <table class="table">
+    <tr class="text-center">
+      <td>Name: </td>
+      <td>{{$parent.profile.firstName + " " + $parent.profile.lastName}}</td>
+    </tr>
+    <tr class="text-center">
+      <td>Email: </td>
+      <td>{{$parent.profile.Email}}</td>
+    </tr>
+    <tr class="text-center">
+      <td>Mobile: </td>
+      <td>{{$parent.profile.Mobile}}</td>
+    </tr>
+    <tr class="text-center">
+      <td>Address: </td>
+      <td>
+        {{$parent.profile.address.street_address}}
+        <br>
+        {{$parent.profile.address.city + ", " + $parent.profile.address.state + " " + $parent.profile.address.pincode}}
+        <br>
+        {{$parent.profile.address.country}}
+      </td>
+    </tr>
+  </table>
+  <div align="center">
+    <button ng-click="editProfile()" class="btn btn-primary" style="font-size: 14 px">Edit Profile</button>
+  </div>
+</div>

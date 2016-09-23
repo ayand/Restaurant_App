@@ -1,0 +1,27 @@
+<style>
+  tr:hover{background-color:#f7b138}
+
+  .btn:focus, .btn:active:focus, .btn.active:focus{
+    outline:none;
+    box-shadow:none;
+  }
+
+</style>
+<div align="center" class="container">
+  <div class="row">
+    <div class="col-sm-6">
+      <table class="table">
+        <tbody>
+          <tr ng-repeat="item in foodItems">
+            <td align="center">
+              <a href="" ng-click="seeDish(item)">{{ item.name }}</a>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <div align="center" class="col-sm-6">
+      <div ui-view></div>
+    </div>
+  </div>
+</div>

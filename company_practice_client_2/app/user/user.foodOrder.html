@@ -1,0 +1,56 @@
+<style>
+  .jumbotron {
+    background-color: #FF6666;
+    padding: 0.5em 0.6em;
+  }
+</style>
+<header class ="page-header" >
+  <div class="row">
+    <ul class="nav nav-pills pull-right">
+      <li><label class="btn btn-warning" ng-click="showButtons()">Edit Order</label></li>
+    </ul>
+  </div>
+</header>
+<div align="center" class="container">
+  <table class="table table-striped">
+    <tbody>
+      <tr ng-repeat="item in orderList">
+        <td align="center">{{ item[1] + " " + item[0].name }}</td>
+        <td align="center">{{ (item[0].price * item[1]) | number:2}}</td>
+        <td align="center" ng-hide="hideButtons">
+          <label class="btn btn-danger" ng-click="removeDish(item)">Delete Item</label>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+<div class="jumbotron">
+  <h3>Transaction Amount</h3>
+  <div align="right" class="row">
+    <div class="col-sm-6">
+      <p>Price Without Tax:</p>
+    </div>
+    <div class="col-sm-6">
+      <p>{{ $parent.itemPrice | number:2}}</p>
+    </div>
+  </div>
+  <div align="right" class="row">
+    <div class="col-sm-6">
+      <p>Tax:</p>
+    </div>
+    <div class="col-sm-6">
+      <p>{{ $parent.tax | number:2}}</p>
+    </div>
+  </div>
+  <div align="right" class="row">
+    <div class="col-sm-6">
+      <p>Total Price:</p>
+    </div>
+    <div class="col-sm-6">
+      <p>{{ $parent.totalPrice | number:2}}</p>
+    </div>
+  </div>
+</div>
+<div align="center">
+  <label class="btn btn-warning" ng-click="makeOrder()">Make Order</label>
+</div>

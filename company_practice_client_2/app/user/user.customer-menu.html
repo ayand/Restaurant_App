@@ -1,0 +1,14 @@
+<header class ="page-header" >
+    <div class="row">
+        <ul class="nav nav-pills pull-right">
+          <li><a ui-sref="dashboard.customer.home">Home</a></li>
+          <li><a ui-sref="dashboard.customer.profile.view">Profile</a></li>
+          <li><a ui-sref="dashboard.customer.order">Make an Order</a></li>
+          <button type="submit" ng-click="logout()"  class="btn btn-default">Sign Out</button>
+        </ul>
+    </div>
+</header>
+
+
+
+<div ui-view></div>
